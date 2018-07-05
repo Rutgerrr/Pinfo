@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <!-- Custom fonts for this template-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <title>Add info</title>
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    margin: 2em;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    width:100%;
+    background-color: blue;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: green;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Add note</h3>
+
+<h4> Insert date/time picker with auto set to today</h4>
+<div>
+    <a href="success.html">
+       <form class="nav-link text-center" style="widht:100%;">
+             <div class="input-group">
+               <input class="form-control" type="text" placeholder="Type name...">
+                   <span class="input-group-append">
+                     <button class="btn btn-primary" type="button">
+                       <i class="fa fa-search"></i>
+                     </button>
+                   </span>
+             </div>
+       </form>
+   </a>
+</div>
+<div class="container">
+  <form action="PI_Page_Home.html">
+    <select id="how">
+      <option value="how">How</option>
+      <option value="inperson">In person</option>
+      <option value="call">Call</option>
+      <option value="Chat / Mail">Chat / Mail</option>
+      <option value="thirdparty">Third party</option>
+      <option value="other">Other</option>
+    </select>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

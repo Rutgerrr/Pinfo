@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    width:100%;
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: green;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Add person</h3>
+
+<div class="container">
+  <form action="PI_Page_Home.html">
+    <input type="text" id="name" placeholder="Name..">
+    <input type="text" id="country" placeholder="Country..">
+    <input type="text" id="city" placeholder="City..">
+    <input type="text" id="phone" placeholder="Phone..">
+    <input type="text" id="email" placeholder="Email..">
+    <select id="country">
+      <option value="status">Friend status</option>
+      <option value="friend">Friend</option>
+      <option value="family">Family</option>
+      <option value="co-worker">Co-worker</option>
+      <option value="other">Other</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
